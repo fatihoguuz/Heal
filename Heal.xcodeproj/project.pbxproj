@@ -9,21 +9,24 @@
 /* Begin PBXBuildFile section */
 		3D459B9F2C7353EA00AA1BB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D459B9E2C7353EA00AA1BB3 /* AppDelegate.swift */; };
 		3D459BA12C7353EA00AA1BB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D459BA02C7353EA00AA1BB3 /* SceneDelegate.swift */; };
-		3D459BA32C7353EA00AA1BB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D459BA22C7353EA00AA1BB3 /* ViewController.swift */; };
-		3D459BA62C7353EB00AA1BB3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D459BA42C7353EB00AA1BB3 /* Main.storyboard */; };
+		3D459BA32C7353EA00AA1BB3 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D459BA22C7353EA00AA1BB3 /* HomeVC.swift */; };
 		3D459BA82C7353ED00AA1BB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D459BA72C7353ED00AA1BB3 /* Assets.xcassets */; };
 		3D459BAB2C7353ED00AA1BB3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D459BA92C7353ED00AA1BB3 /* LaunchScreen.storyboard */; };
+		3D459BC02C74EAA200AA1BB3 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 3D459BBF2C74EAA200AA1BB3 /* DGCharts */; };
+		3D459BC22C74EAA200AA1BB3 /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 3D459BC12C74EAA200AA1BB3 /* DGChartsDynamic */; };
+		3D459BC52C74EFCD00AA1BB3 /* UICircularProgressRing in Frameworks */ = {isa = PBXBuildFile; productRef = 3D459BC42C74EFCD00AA1BB3 /* UICircularProgressRing */; };
+		3D459BC72C74F2ED00AA1BB3 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D459BC62C74F2ED00AA1BB3 /* CircularProgressView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3D459B9B2C7353EA00AA1BB3 /* Heal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Heal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D459B9E2C7353EA00AA1BB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D459BA02C7353EA00AA1BB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D459BA22C7353EA00AA1BB3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3D459BA52C7353EB00AA1BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D459BA22C7353EA00AA1BB3 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
 		3D459BA72C7353ED00AA1BB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D459BAA2C7353ED00AA1BB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D459BAC2C7353ED00AA1BB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D459BC62C74F2ED00AA1BB3 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +34,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D459BC52C74EFCD00AA1BB3 /* UICircularProgressRing in Frameworks */,
+				3D459BC22C74EAA200AA1BB3 /* DGChartsDynamic in Frameworks */,
+				3D459BC02C74EAA200AA1BB3 /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,9 @@
 		3D459B922C7353EA00AA1BB3 = {
 			isa = PBXGroup;
 			children = (
+				3D459BB22C73541C00AA1BB3 /* Delegates */,
+				3D459BB92C73605100AA1BB3 /* Circular */,
+				3D459BB52C73543A00AA1BB3 /* View */,
 				3D459B9D2C7353EA00AA1BB3 /* Heal */,
 				3D459B9C2C7353EA00AA1BB3 /* Products */,
 			);
@@ -56,15 +65,36 @@
 		3D459B9D2C7353EA00AA1BB3 /* Heal */ = {
 			isa = PBXGroup;
 			children = (
-				3D459B9E2C7353EA00AA1BB3 /* AppDelegate.swift */,
-				3D459BA02C7353EA00AA1BB3 /* SceneDelegate.swift */,
-				3D459BA22C7353EA00AA1BB3 /* ViewController.swift */,
-				3D459BA42C7353EB00AA1BB3 /* Main.storyboard */,
 				3D459BA72C7353ED00AA1BB3 /* Assets.xcassets */,
 				3D459BA92C7353ED00AA1BB3 /* LaunchScreen.storyboard */,
 				3D459BAC2C7353ED00AA1BB3 /* Info.plist */,
 			);
 			path = Heal;
+			sourceTree = "<group>";
+		};
+		3D459BB22C73541C00AA1BB3 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				3D459B9E2C7353EA00AA1BB3 /* AppDelegate.swift */,
+				3D459BA02C7353EA00AA1BB3 /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		3D459BB52C73543A00AA1BB3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D459BA22C7353EA00AA1BB3 /* HomeVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D459BB92C73605100AA1BB3 /* Circular */ = {
+			isa = PBXGroup;
+			children = (
+				3D459BC62C74F2ED00AA1BB3 /* CircularProgressView.swift */,
+			);
+			path = Circular;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +113,11 @@
 			dependencies = (
 			);
 			name = Heal;
+			packageProductDependencies = (
+				3D459BBF2C74EAA200AA1BB3 /* DGCharts */,
+				3D459BC12C74EAA200AA1BB3 /* DGChartsDynamic */,
+				3D459BC42C74EFCD00AA1BB3 /* UICircularProgressRing */,
+			);
 			productName = Heal;
 			productReference = 3D459B9B2C7353EA00AA1BB3 /* Heal.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +146,10 @@
 				Base,
 			);
 			mainGroup = 3D459B922C7353EA00AA1BB3;
+			packageReferences = (
+				3D459BBE2C74EAA100AA1BB3 /* XCRemoteSwiftPackageReference "Charts" */,
+				3D459BC32C74EFCD00AA1BB3 /* XCRemoteSwiftPackageReference "UICircularProgressRing" */,
+			);
 			productRefGroup = 3D459B9C2C7353EA00AA1BB3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +166,6 @@
 			files = (
 				3D459BAB2C7353ED00AA1BB3 /* LaunchScreen.storyboard in Resources */,
 				3D459BA82C7353ED00AA1BB3 /* Assets.xcassets in Resources */,
-				3D459BA62C7353EB00AA1BB3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +176,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D459BA32C7353EA00AA1BB3 /* ViewController.swift in Sources */,
+				3D459BA32C7353EA00AA1BB3 /* HomeVC.swift in Sources */,
 				3D459B9F2C7353EA00AA1BB3 /* AppDelegate.swift in Sources */,
+				3D459BC72C74F2ED00AA1BB3 /* CircularProgressView.swift in Sources */,
 				3D459BA12C7353EA00AA1BB3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +186,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3D459BA42C7353EB00AA1BB3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3D459BA52C7353EB00AA1BB3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3D459BA92C7353ED00AA1BB3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +327,6 @@
 				INFOPLIST_FILE = Heal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +353,6 @@
 				INFOPLIST_FILE = Heal/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -361,6 +390,43 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3D459BBE2C74EAA100AA1BB3 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+		3D459BC32C74EFCD00AA1BB3 /* XCRemoteSwiftPackageReference "UICircularProgressRing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/luispadron/UICircularProgressRing.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3D459BBF2C74EAA200AA1BB3 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D459BBE2C74EAA100AA1BB3 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		3D459BC12C74EAA200AA1BB3 /* DGChartsDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D459BBE2C74EAA100AA1BB3 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGChartsDynamic;
+		};
+		3D459BC42C74EFCD00AA1BB3 /* UICircularProgressRing */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3D459BC32C74EFCD00AA1BB3 /* XCRemoteSwiftPackageReference "UICircularProgressRing" */;
+			productName = UICircularProgressRing;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3D459B932C7353EA00AA1BB3 /* Project object */;
 }
